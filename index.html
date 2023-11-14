@@ -6,59 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurs Web Dev Full Stack</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Comfortaa&family=Nunito">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Agbalumo">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header>
-        <h1>My first page</h1>
+        <h1 style="position: fixed; top: 10px;">My first page</h1>
         <a href="contact.html">Contact me</a>
         <br>
     </header>
 
-    <article>
-        <h3>Pierwszy post na blogu</h3>
-        Treść pierwszego artykułu na blogu
-        <br>
+    <div id="main-content">
 
-    </article>
-    <article>
-        <h3>Drugi post na blogu</h3>
-        Treść drugiego <mark>artykułu</mark> na blogu
-        <br> <!--Komentarz -->
+        <div id="articles">
 
-    </article>
-    <article>
-        <h3>Trzeci post na blogu</h3>
-        Treść trzeciego artykułu na blogu
-        <br> <!--Komentarz -->
+            <article>
+                <h3>Pierwszy post na blogu</h3>
+                <p>Treść pierwszego artykułu na blogu</p>
 
-    </article>
 
-    <br><br><br><br>
-    <div>My skills:<!--DIV is a block element, Span - inline element-->
-        <table border="1">
-            <tr>
-                <th>Technology</th>
-                <th>Level</th>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>0<sup class="sup_element" style="color:red">*</sup></td>
-            </tr>
-        </table>
+            </article>
+            <br>
+            <article>
+                <h3>Drugi post na blogu</h3>
+                <p>Treść drugiego <mark>artykułu</mark> na blogu</p>
 
-        <small><sup class="sup_element">* - I'm learning</sup></small>
+
+            </article>
+            <br> <!--Komentarz -->
+            <article>
+                <h3>Trzeci post na blogu</h3>
+                <p>Treść trzeciego artykułu na blogu</p>
+
+            </article>
+            <br> <!--Komentarz -->
+
+        </div>
+
+
+        <div id="skills">
+            My skills:<!--DIV is a block element, Span - inline element-->
+            <table border="1">
+                <tr>
+                    <th>Technology</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>0<sup class="sup_element">*</sup></td>
+                </tr>
+            </table>
+
+            <small><sup class="sup_element">* - I'm learning</sup></small>
+        </div>
     </div>
+
 
     <br><br><br><br>
     <footer>
         <div>Stopka. <strong>&copy; Copyright 2023</strong> </div>
+        <p>Paragraf w stopce</p>
         <!-- Super hiper -->
     </footer>
 

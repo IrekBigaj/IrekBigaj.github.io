@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Nunito";
+	font-size: 15px;
+	/* margin-left: 50px; */
+	/* background-image: url("https://picsum.photos/seed/picsum/200/300"); */
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* header a {
+	float: right;
+} */
+
+table {
+	text-align: center;
+	line-height: 120%;
+	width: 300px;
+	height: 200px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	background-color: gold;
+}
+
+tr {
+	font-size: 140%;
+}
+
+/* selector {property: value} */
+
+h1 {
+	color: blue;
+	font-family: "Agbalumo", "Arial Narrow", Arial, sans-serif;
+}
+
+h3 {
+	color: coral;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+p {
+	color: blue;
+}
+
+.sup_element {
+	color: chartreuse;
+}
+
+footer {
+	bottom: 1px;
+	width: 100%;
+	text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+	footer {
+		position: fixed;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	div#main-content,
+	header {
+		flex-direction: column;
+	}
+}
+
+/* selektor potomka - wszystkie p w footerze - na wszystkich poziomach*/
+footer p {
+	color: lime;
+}
+
+/* selektor dziecka - p musi być bezpośrednio w footer*/
+footer > p {
+	color: coral;
+}
+
+footer strong {
+	text-decoration: underline wavy #ff66ce;
+}
+
+div#main-content {
+	background-color: bisque;
+	padding: 20px;
+	border-style: dotted;
+	display: flex;
+}
+
+article {
+	border: 1px solid black;
+	padding-left: 30px;
+	width: 600px;
+	background-color: blanchedalmond;
+}
+
+mark {
+	border-radius: 5px;
+}
+
+a:hover {
+	color: #ff66ce;
+}
+
+table tr:first-child {
+	color: blue;
+	background-color: #ff66ce;
+}
+
+th:hover {
+	color: #ff66ce;
+	background-color: blue;
+}
+
+/* span {
+	display: block;
+} */
+
+#skills {
+	align-self: center;
+	flex-grow: 1;
+}
